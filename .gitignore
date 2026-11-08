@@ -1,0 +1,16 @@
+# Public raw respondent data are retrieved directly from the source archive.
+data/HEXACO/
+data/BIG5/
+data/NPI/
+data/SD3/
+data/*.zip
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Local, potentially sensitive or machine-specific files
+.env
+*.log
