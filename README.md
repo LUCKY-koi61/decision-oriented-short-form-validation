@@ -6,9 +6,10 @@ The study evaluates how progressive shortening of four public personality invent
 
 ## Contents
 
-- `analysis/` — the primary fixed-form holdout analysis, `v21_fixed_form_holdout_validation_20261107.py`, and `psych_gate_r5e_tiesafe_curves.py`, which supplies the core scoring utilities.
-- `results/` — frozen, non-identifying JSON outputs supporting reported results.
-- `figure_source_data/` — source data for the two-stage screening figure.
+- `code/core/` — core scoring utilities.
+- `code/experiments/` — the primary fixed-form holdout analysis, `v21_fixed_form_holdout_validation_20261107.py`.
+- `outputs/validation/` — frozen, non-identifying JSON output supporting the fixed-form holdout results.
+- `outputs/figure_source_data/` — source data for the two-stage screening figure.
 - `figures/` — six 600 dpi PNG figures prepared for submission.
 - `data/` — instructions for obtaining the public raw data; raw respondent files are deliberately not included.
 
@@ -27,10 +28,10 @@ The study evaluates how progressive shortening of four public personality invent
 3. Run:
 
    ```bash
-   python analysis/v21_fixed_form_holdout_validation_20261107.py
+   python code/experiments/v21_fixed_form_holdout_validation_20261107.py
    ```
 
-The script writes `results/v21_fixed_form_holdout_validation_20261107.json`. Fixed random seeds are embedded in the script. Full reproduction may be computationally demanding because the procedure includes 200 fixed random-form comparisons and 1,000 bootstrap resamples.
+The script writes `outputs/validation/v21_fixed_form_holdout_validation_20261107.json`. Fixed random seeds are embedded in the script. Full reproduction may be computationally demanding because the procedure includes 200 fixed random-form comparisons and 1,000 bootstrap resamples.
 
 ## Data source and reuse
 

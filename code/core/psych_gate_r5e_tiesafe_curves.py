@@ -39,9 +39,9 @@ import pandas as pd
 from scipy.stats import norm, spearmanr
 from scipy.stats import multivariate_normal as mvn
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 D = Path(os.environ.get("SHORTFORM_DATA_DIR", ROOT / "data")).resolve()
-RES = Path(os.environ.get("SHORTFORM_RESULTS_DIR", ROOT / "results")).resolve()
+RES = Path(os.environ.get("SHORTFORM_RESULTS_DIR", ROOT / "outputs" / "validation")).resolve()
 OUT = RES / "psych_gate_r5e_tiesafe_curves.json"
 REPS = 200
 SEED = 20261105

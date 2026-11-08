@@ -26,11 +26,11 @@ import pandas as pd
 from scipy.stats import spearmanr
 
 
-PROJ = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(PROJ / "analysis"))
+PROJ = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJ / "code" / "core"))
 import psych_gate_r5e_tiesafe_curves as mc  # noqa: E402
 
-OUT = PROJ / "results" / "v21_fixed_form_holdout_validation_20261107.json"
+OUT = PROJ / "outputs" / "validation" / "v21_fixed_form_holdout_validation_20261107.json"
 SPLIT_SEED = 2026110703
 TIE_SEED = 2026110704
 RANDOM_SEED = 2026110705
